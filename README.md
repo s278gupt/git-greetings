@@ -26,3 +26,5 @@ Then source your bash_profile:
 ```bash
   source ~/.bash_profile
 ```
+# note
+I left my color scheme in there because I was too lazy to remove it. If you don't want it, just comment/delete lines 20-23
