@@ -1,6 +1,8 @@
- TIME=$(date "+%k")
- now=$(date "+%T")
- 
+# variables for storing time 
+TIME=$(date "+%k")
+now=$(date "+%T")
+
+# change greeting depending on time of day 
   if ((TIME < 12 )); then
       echo "Good morning  $(whoami)!"
   elif ((TIME < 18 )); then
@@ -9,10 +11,12 @@
       echo "Good evening $(whoami)!"
   fi
  
+# greeting
  echo "The time is: $now. Today's thought is:"
  echo " $(fortune -s)"
  
 
+# comment lines 20-23 to keep your current color scheme
  alias ls='ls -GFh' 
  export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
  export CLICOLOR=1
